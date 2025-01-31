@@ -1651,89 +1651,29 @@ Portfolio
   overflow: hidden;
   position: relative;
 }
-
-.our-portfolio:before {
-  content: '';
-  background-image: url(../images/portfolio-right-dec.jpg);
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 0;
-  top: 0px;
-  width: 414px;
-  height: 861px;
-  z-index: 1;
-}
-
-.our-portfolio:after {
-  content: '';
-  background-image: url(../images/portfolio-left-dec.jpg);
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0px;
-  width: 677px;
-  height: 759px;
-  z-index: 1;
-}
-
 .our-portfolio .section-heading {
   margin-bottom: 80px;
 }
 
 .our-portfolio .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
   position: relative;
   z-index: 2;
 }
 
 .our-portfolio .item {
-  position: relative;
-  z-index: 222;
+  width: 800%;
+  height: auto;
 }
 
 .portfolio-item {
-  border-radius: 25px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-  margin: 15px;
+ width: 800%;
+ height: auto;
 }
 
-.portfolio-item .thumb {
-  position: relative;
-  border-radius: 50px;
-}
 
 .portfolio-item:hover .down-content h4,
 .portfolio-item:hover .down-content span {
   color: #fe664e;
-}
-
-.portfolio-item .thumb img {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  overflow: hidden;
-}
-
-.portfolio-item .down-content {
-  background-color: #fff;
-  text-align: center;
-  padding: 18px 0px;
-  border-bottom-right-radius: 23px;
-  border-bottom-left-radius: 23px;
-}
-
-.portfolio-item .down-content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #2a2a2a;
-  margin-bottom: 8px;
-  transition: all .3s;
-}
-
-.portfolio-item .down-content span {
-  font-size: 15px;
-  color: #afafaf;
-  transition: all .3s;
 }
 
 .our-portfolio .owl-nav {
@@ -2362,8 +2302,10 @@ responsive
   .our-portfolio .section-heading .line-dec {
     margin: 0 auto;
   }
-  .our-portfolio .image-slider {
-    margin: 0 auto ;
+  .our-portfolio .container .row .item .image-slider .slides .slide {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .our-services .section-heading {
     margin-left: 15px;

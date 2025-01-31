@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,6 +84,18 @@
         width: 100%;
         height: auto;
       }
+
+      @media (max-width: 768px) {
+        .image-slider {
+          max-width: 100%; /* Make the slider full width on mobile */
+          margin: 0; /* Remove margin */
+        }
+
+        .slide img {
+          width: 100%; /* Make images full width on mobile */
+          height: auto; /* Maintain aspect ratio */
+        }
+      }
     </style>
 
   </head>
@@ -140,9 +152,9 @@
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#portfolio">Whats New</a></li>
               <li class="scroll-to-section"><a href="#services">Services</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Projects</a></li>
-              <li class="scroll-to-section"><a href="#blog">Blog</a></li>
+              <li class="scroll-to-section"><a href="#blog">News</a></li>
               <li class=""><a href="page.html">About</a></li>
               <li class="scroll-to-section"><a href="#contact">Contact</a></li> 
               <br>
@@ -242,30 +254,35 @@
   
   <div id="portfolio" class="our-portfolio section">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
           <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
             <h6>What's New</h6>
             <h4>Latest <em> Updates</em></h4>
           </div>
         </div>
-      </div>
-    </div>
+        </div>
     <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-  <div id="image-slider" class="image-slider" style="text-align: right;">
-    <div class="slides" style="margin-right: 20px;">
-      <div class="slide active">
-        <img src="assets/images/completion.jpg" alt="Slide 1" style="width: 80%; height: 500px;">
-      </div>
-      <div class="slide">
-        <img src="assets/images/coop.jpg" alt="Slide 2" style="width: 80%; height: 500px;">
-      </div>
-      <div class="slide">
-        <img src="assets/images/SEMCO INTERNET.png" alt="Slide 3" style="width: 80%; height: 500px;">
-  </div>
-  </div>
-  </div>
-</div>
+      <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="item">
+                <div id="image-slider" class="image-slider" style="text-align: right;">
+                  <div class="slides" style="margin-right: 20px;">
+                    <div class="slide active">
+                      <img src="assets/images/completion.jpg" alt="Slide 1" style="width: 80%; height: 500px;">
+                    </div>
+                    <div class="slide">
+                      <img src="assets/images/coop.jpg" alt="Slide 2" style="width: 80%; height: 500px;">
+                    </div>
+                    <div class="slide">
+                      <img src="assets/images/SEMCO INTERNET.png" alt="Slide 3" style="width: 80%; height: 500px;">
+                </div>
+                </div>
+                </div>
+              </div>
+              
+              </div>
+            </div>
+          </div>
 <br>
 <br>
 <br>
@@ -527,9 +544,7 @@
         </div>
         </div>
       </div>
-    </div>
   </div>
-</div>
 
   <div id="blog" class="blog">
     <div class="container">
