@@ -2362,6 +2362,9 @@ responsive
   .our-portfolio .section-heading .line-dec {
     margin: 0 auto;
   }
+  .our-portfolio .image-slider {
+    margin: 0 auto ;
+  }
   .our-services .section-heading {
     margin-left: 15px;
     margin-right: 15px;
