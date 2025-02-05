@@ -133,6 +133,7 @@ p {
 img {
   width: 100%;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 /* 
@@ -2302,10 +2303,9 @@ responsive
   .our-portfolio .section-heading .line-dec {
     margin: 0 auto;
   }
-  .our-portfolio .container .row .item .image-slider .slides .slide {
+  .our-portfolio .container .row .item .image-slider .slides .slide img {
     width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0 auto;
   }
   .our-services .section-heading {
     margin-left: 15px;
