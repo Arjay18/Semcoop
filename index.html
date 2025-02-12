@@ -93,7 +93,7 @@
 
         .slide img {
           width: 100%; /* Make images full width on mobile */
-          height: 50%; /* Maintain aspect ratio */
+          height: auto; /* Maintain aspect ratio */
         }
       }
     </style>
@@ -275,24 +275,30 @@
                     </div>
                     <div class="slide">
                       <img src="assets/images/SEMCO INTERNET.png" alt="Slide 3" style="width: 80%; height: 500px;">
-                </div>
-                </div>
+                    </div>
+                  </div>
+                  <!-- Navigation buttons -->
+                  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                  <!-- Indicators -->
+                  <div class="indicator-container">
+                    <span class="indicator" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
+                    <span class="indicator" onclick="currentSlide(3)"></span>
+                  </div>
                 </div>
               </div>
-              
-              </div>
-            </div>
           </div>
-<br>
-<br>
-<br>
- 
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div id="services" class="services section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
             <h6>Our Services</h6>
             <h4>What Semco <em>Provides</em></h4>
             <div class="line-dec"></div>
@@ -309,8 +315,8 @@
                         <span class="icon"><img src="assets/images/trading (1).jpg" alt=""></span>
                         Trading Store
                       </div>
-                     </div>
-                     <div>
+                    </div>
+                    <div>
                       <div class="thumb">                 
                         <span class="icon"><img src="assets/images/lending (1).jpg" alt=""></span>
                         Lending
@@ -319,7 +325,7 @@
                     <div>
                       <div class="thumb">                 
                         <span class="icon"><img src="assets/images/internet (1).jpg" alt=""></span>
-                        Catv & Internet
+                        CATV & Internet
                       </div>
                     </div>
                     <div>
@@ -345,17 +351,14 @@
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
                                 <h4>TRADING STORE</h4>
-                                <p>The Trading or SEMCO Island Mart (Our Store), using POS machines is providing and maintaining stocks of general merchendise and/or basic commodities and appliances for the member and the community. Prives are very reasonable and much lower than at other store on the island.</p>
-                                <P>Items can be availed of on a cash basis</P>
-                                <P>Charge sales are allowed to member with payroll deductions with no additional charges. Each member is given an allowances for charge sales or "Vale" every 15 days at a maximum of five thousand pesos worth of groceries.basic needs.</P>
+                                <p>The Trading or SEMCO Island Mart (Our Store) provides and maintains stocks of general merchandise and/or basic commodities and appliances for the members and the community. Prices are very reasonable and much lower than at other stores on the island.</p>
+                                <p>Items can be availed of on a cash basis.</p>
                                 <h4>Store Hours:</h4>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> 8:00am to 7:30pm</span> 
-                                   </div>
-                                  <h4>Open for Business</h4>
-                                  <span><i class="fa fa-check"></i> Monday to Sunday & Holiday</span><br>
-                                  <span><i class="fa fa-check"></i> Closed: Inventory Day,Good Firday, Christmass Day & New Year's Day</span>
-                                </div>
-                               
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> 8:00am to 7:30pm</span></div>
+                                <h4>Open for Business</h4>
+                                <span><i class="fa fa-check"></i> Monday to Sunday & Holiday</span><br>
+                                <span><i class="fa fa-check"></i> Closed: Inventory Day, Good Friday, Christmas Day & New Year's Day</span>
+                              </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
@@ -373,15 +376,22 @@
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
                                 <h4>LENDING</h4>
-                                <p>Acceptance of member's Investment (capital & savings deposit ) and granting of loans.</p>
-                                <P>In lending services, we offer providential loans to qualified members computed on diminishing interest rate as follows:</P>
-                                <h4> Semco Loan Offered</h4>
-                                <div class="ticks-list"><btn"><span><button id="openModal1" class="btn btn-primary">Long Term Loan</button></span><span><button id="openModal2" class="btn btn-primary">Short Term Loan</button></span>
-                                   <span><button id="openModal10" class="btn btn-primary">Appliances Loan</button></span> <span><button id="openModal3" class="btn btn-primary">Educational Loan</button></span>
-                                   <span><button id="openModal4" class="btn btn-primary">Vesting Right Loan</button></span><span><button id="openModal5" class="btn btn-primary">Length of Service Loan</button></span>
-                                   <span><button id="openModal6" class="btn btn-primary">Business Loan</button></span><span><button id="openModal7" class="btn btn-primary">Special Occasion Loan</button></span>
-                                   <span><button id="openModal8" class="btn btn-primary">Emergency Loan</button></span><span><button id="openModal9" class="btn btn-primary">Medical Loan</button></span>
-                                <p>Loan proceeds were usually intended for investment/business, house repair, housing payment, lot payment, hospital/medical/maternity charges, bills payment, tuition and other school fees, occasions/events expenses, etc.</p>
+                                <p>Acceptance of member's investment (capital & savings deposit) and granting of loans.</p>
+                                <p>In lending services, we offer providential loans to qualified members computed on diminishing interest rates as follows:</p>
+                                <h4>Semco Loan Offered</h4>
+                                <div class="ticks-list">
+                                  <span><button id="openModal1" class="btn btn-primary">Long Term Loan</button></span>
+                                  <span><button id="openModal2" class="btn btn-primary">Short Term Loan</button></span>
+                                  <span><button id="openModal10" class="btn btn-primary">Appliances Loan</button></span>
+                                  <span><button id="openModal3" class="btn btn-primary">Educational Loan</button></span>
+                                  <span><button id="openModal4" class="btn btn-primary">Vesting Right Loan</button></span>
+                                  <span><button id="openModal5" class="btn btn-primary">Length of Service Loan</button></span>
+                                  <span><button id="openModal6" class="btn btn-primary">Business Loan</button></span>
+                                  <span><button id="openModal7" class="btn btn-primary">Special Occasion Loan</button></span>
+                                  <span><button id="openModal8" class="btn btn-primary">Emergency Loan</button></span>
+                                  <span><button id="openModal9" class="btn btn-primary">Medical Loan</button></span>
+                                </div>
+                                <p>Loan proceeds are usually intended for investment/business, house repair, housing payment, hospital/medical/maternity charges, tuition, and other school fees, occasions/events expenses, etc.</p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
@@ -400,15 +410,34 @@
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
                                 <h4>CATV & INTERNET</h4>
-                                <p>SEMCO offers Cable Tv and Internet Services.</p>
-                                <P>Cable Tv provides a stable and reliable signal that is less susceptible to weather-related disruption. It offers a variety of channels (60 channels), which the whole family enjoys.</P>
-                                <P>Cable Internet provides speed and reliability at an affordable price. it is still an excellent option for internet access of the average family, even with multiple devices, streaming, and gaming, and most of all, it is very significant for the student's virtual classes and online activities.</P>
-                                <h4>Installation :</h4>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> CATV only - Php 1,000.00</span> <span><i class="fa fa-check"></i> Internet only - Php 2,500.00</span> <span><i class="fa fa-check"></i> Both CATV and Internet - Php 3,500.00</span>
-                                  <h4>Monthly Subscription Fee :</h4>
-                                  <span><i class="fa fa-check"></i> Internet and CATV - Php 1,600.00</span> <span><i class="fa fa-check"></i> CATV only - Php 400.00</span> <span><i class="fa fa-check"></i>  Internet only - Php 1,200.00</span> <span><i class="fa fa-check"></i> Additional TV Set per extension (Limited to 2 Extensions only) - Php 100.00</span>
-                                  <h4>Other Charges (Internet and CATV System) :</h4>
-                                  <span><i class="fa fa-check"></i>  Transfer Fee-CATV (Service Charge-Brgy Semirara) - Php 200.00</span> <span><i class="fa fa-check"></i> Transfer Fee-CATV (Service Charge-Bunlao Housing) - Php 500.00</span> <span><i class="fa fa-check"></i> Transfer Fee-INTERNET (Service Charge-Brgy Semirara) - Php 100.00</span> <span><i class="fa fa-check"></i> Reconnection Fee-CATV (Main Disconnected) - Php 300.00</span> <span><i class="fa fa-check"></i> Reconnection Fee-CATV (tv Extension) - Php 50.00</span> <span><i class="fa fa-check"></i> Reconnection Fee-INTERNET - Php 300.00</span> <span><i class="fa fa-check"></i> CATV Cable in excess of 15ft coaxial (cost per meter) - Php 35.00</span> <span><i class="fa fa-check"></i> Internet Cable in excess of 40m fiber optic (cost per meter) - Php 35.00</span> <span><i class="fa fa-check"></i> Replacement of Damage Modem - Php 2,500.00</span></div>
+                                <p>SEMCO offers Cable TV and Internet Services.</p>
+                                <p>Cable TV provides a stable and reliable signal that is less susceptible to weather-related disruption. It offers a variety of channels (60 channels), which the whole family enjoys.</p>
+                                <p>Cable Internet provides speed and reliability at an affordable price, making it an excellent option for families with multiple devices, streaming, and gaming.</p>
+                                <h4>Installation:</h4>
+                                <div class="ticks-list">
+                                  <span><i class="fa fa-check"></i> CATV only - Php 1,000.00</span>
+                                  <span><i class="fa fa-check"></i> Internet only - Php 2,500.00</span>
+                                  <span><i class="fa fa-check"></i> Both CATV and Internet - Php 3,500.00</span>
+                                </div>
+                                <h4>Monthly Subscription Fee:</h4>
+                                <div class="ticks-list">
+                                  <span><i class="fa fa-check"></i> Internet and CATV - Php 1,600.00</span>
+                                  <span><i class="fa fa-check"></i> CATV only - Php 400.00</span>
+                                  <span><i class="fa fa-check"></i> Internet only - Php 1,200.00</span>
+                                  <span><i class="fa fa-check"></i> Additional TV Set per extension (Limited to 2 Extensions only) - Php 100.00</span>
+                                </div>
+                                <h4>Other Charges:</h4>
+                                <div class="ticks-list">
+                                  <span><i class="fa fa-check"></i> Transfer Fee-CATV (Service Charge-Brgy Semirara) - Php 200.00</span>
+                                  <span><i class="fa fa-check"></i> Transfer Fee-CATV (Service Charge-Bunlao Housing) - Php 500.00</span>
+                                  <span><i class="fa fa-check"></i> Transfer Fee-INTERNET (Service Charge-Brgy Semirara) - Php 100.00</span>
+                                  <span><i class="fa fa-check"></i> Reconnection Fee-CATV (Main Disconnected) - Php 300.00</span>
+                                  <span><i class="fa fa-check"></i> Reconnection Fee-CATV (TV Extension) - Php 50.00</span>
+                                  <span><i class="fa fa-check"></i> Reconnection Fee-INTERNET - Php 300.00</span>
+                                  <span><i class="fa fa-check"></i> CATV Cable in excess of 15ft coaxial (cost per meter) - Php 35.00</span>
+                                  <span><i class="fa fa-check"></i> Internet Cable in excess of 40m fiber optic (cost per meter) - Php 35.00</span>
+                                  <span><i class="fa fa-check"></i> Replacement of Damaged Modem - Php 2,500.00</span>
+                                </div>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
@@ -427,11 +456,13 @@
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
                                 <h4>Online Shopping &amp; Tracking ID</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
-                                  dover lipsum lorem and the others.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span>
-                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="ticks-list">
+                                  <span><i class="fa fa-check"></i> Optimized Template</span>
+                                  <span><i class="fa fa-check"></i> Data Info</span>
+                                  <span><i class="fa fa-check"></i> SEO Analysis</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
@@ -450,11 +481,13 @@
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
                                 <h4>Enjoy &amp; Travel</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
-                                  dover lipsum lorem and the others.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span>
-                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="ticks-list">
+                                  <span><i class="fa fa-check"></i> Optimized Template</span>
+                                  <span><i class="fa fa-check"></i> Data Info</span>
+                                  <span><i class="fa fa-check"></i> SEO Analysis</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
