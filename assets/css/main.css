@@ -2683,7 +2683,7 @@ responsive
 .card-container {
   display: flex;
   justify-content: space-around;
-  margin: 80px;
+  margin: 20px;
 }
 
 .card {
