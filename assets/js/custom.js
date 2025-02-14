@@ -166,6 +166,36 @@
     
 
 
+    let slideIndex = 0;
+
+    function showSlides() {
+        const slides = document.querySelectorAll('.item');
+        slides.forEach((slide, index) => {
+            slide.style.display = (index === slideIndex) ? 'block' : 'none';
+        });
+    }
+
+    function changeSlide(n) {
+        const slides = document.querySelectorAll('.item');
+        slideIndex += n;
+        if (slideIndex >= slides.length) { slideIndex = 0; }
+        if (slideIndex < 0) { slideIndex = slides.length - 1; }
+        showSlides();
+    }
+
+    // Initialize the slider
+    showSlides();
+
+    // Automatic slide change every 10 seconds
+    setInterval(() => {
+        changeSlide(1); // Change to the next slide
+    }, 10000); // 10000 milliseconds = 10 seconds
+
 
 })(window.jQuery);
+
+
+
+
+
 
