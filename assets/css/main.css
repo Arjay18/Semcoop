@@ -1576,7 +1576,7 @@ Free Quote
 */
 
 .free-quote {
-  background-image: linear-gradient(rgba(50, 49, 49, 0.627), #000000), url(../images/semco.jpg);
+  background-image: linear-gradient(rgba(50, 49, 49, 0.627), #2e2828), url(../images/ADS\ SLider.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1584,7 +1584,7 @@ Free Quote
   text-align: center;
   position: relative;
   z-index: 2;
-  margin-top: 130px;
+  margin-top:100px;
 }
 
 .free-quote .section-heading {
@@ -1768,6 +1768,78 @@ Portfolio
   color: #fff;
   background-color: #fe664e;
 }
+/*
+-------------------------------------------
+Page Title
+--------------------------------------------
+*/
+.page-title {
+  background-image: linear-gradient(rgba(50, 49, 49, 0.627), #2e2828), url(../images/ADS\ SLider.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 120px 0px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top:0;
+}
+
+.page-title .section-heading {
+  margin-bottom: 60px;
+}
+
+.page-title .section-heading h6,
+.page-title .section-heading h4 {
+  color: #fff;
+}
+
+.page-title .section-heading .line-dec {
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.page-title form {
+  background-color: #fff;
+  display: inline-block;
+  width: 100%;
+  min-height: 80px;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.page-title form input {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 30px;
+  color: #afafaf;
+  font-weight: 400;
+  font-size: 15px;
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid #eee;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  z-index: 2;
+  outline: none;
+}
+
+.page-title form button {
+  width: 100%;
+  height: 80px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  outline: none;
+  border: none;
+  margin-left: 30px;
+  background-color: #fe664e;
+  font-size: 15px;
+  color: #fff;
+}
+
 
 /*
 --------------------------------------------
