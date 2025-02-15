@@ -73,7 +73,7 @@
     display: block; }
   .owl-carousel.owl-loading {
     opacity: 0;
-    display: block; }
+    display:block; }
   .owl-carousel.owl-hidden {
     opacity: 0; }
   .owl-carousel.owl-refresh .owl-item {
