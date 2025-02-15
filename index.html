@@ -70,7 +70,51 @@
         overflow: hidden;
       }
 
+      /* Add this CSS to set fixed dimensions for news images */
       
+      /* Update primary color */
+      body {
+        background-color: #f0f0f0; /* Light Gray */
+        color: #4a4a4a; /* Dark Gray */
+        font-family: 'Arial', sans-serif; /* More corporate font */
+      }
+
+      h1, h3 {
+        color: #003366; /* Navy Blue */
+        font-weight: bold; /* Make headings stand out */
+      }
+
+      .card-content p {
+        color: #4a4a4a; /* Dark Gray */
+      }
+
+      footer {
+        background-color: #003366; /* Navy Blue */
+        color: white; /* White */
+      }
+
+      hr {
+        border-color: #FFD700; /* Gold */
+      }
+
+      .btn {
+        background-color: #003366; /* Navy Blue */
+        color: white; /* White */
+        border: none; /* Remove border */
+        padding: 10px 20px; /* Add padding */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor */
+      }
+
+      .btn:hover {
+        background-color: #FFD700; /* Gold on hover */
+        color: #003366; /* Navy Blue text on hover */
+      }
+
+      @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
     </style>
 
   </head>
@@ -89,7 +133,12 @@
     </div>
   </div>
   <!-- ***** Preloader End ***** -->
-
+ <div class="preheader" style="background-color: #003366; color: white; text-align: right; padding: 10px 15px; position: fixed; width: 100%; top: 0; z-index: 1000; overflow: hidden;">
+    <div style="display: inline-block; white-space: nowrap; animation: marquee 10s linear infinite;">
+      Welcome to Semirara Multi Purpose Cooperative! this a sample text to be display on the preheader area thank yu so much 
+    </div>
+  </div>
+<br>
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
@@ -175,8 +224,75 @@
     </div>
   </div>
 <br>
+<section id="news" class="news-section">
+  <div class="container">
+      <div id="newsCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row">
+                      <div class="col-lg-4">
+                          <div class="news-item">
+                              <img src="assets/images/semco.jpg" alt="News 1" class="img-fluid news-image">
+                              <h3 style="font-weight: bold; color: orangered;">Trading Store</h3>
+                              <p>Date: January 1, 2025</p>
+                              <p>Brief description of the news article goes here. This should summarize the main points.</p>
+                              <a href="#" class="read-more">Read More</a>
+                          </div>
+                      </div>
+                      <div class="col-lg-4">
+                          <div class="news-item">
+                              <img src="assets/images/Lending.jpg" alt="News 2" class="img-fluid news-image">
+                              <h3 style="font-weight: bold; color: orangered;">Lending</h3>
+                              <p>Date: January 2, 2025</p>
+                              <p>Brief description of the news article goes here. This should summarize the main points.</p>
+                              <a href="#" class="read-more">Read More</a>
+                          </div>
+                      </div>
+                      <div class="col-lg-4">
+                          <div class="news-item">
+                              <img src="assets/images/CATV-SAT.jpg" alt="News 3" class="img-fluid news-image">
+                              <h3 style="font-weight: bold; color: orangered;">CATV & Internet</h3>
+                              <p>Date: January 3, 2025</p>
+                              <p>Brief description of the news article goes here. This should summarize the main points.</p>
+                              <a href="#" class="read-more">Read More</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+
+  
+
+  <div id="free-quote" class="free-quote">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+            <h1 class="text-center" style="font-weight: 800; margin-top: -20px; color: orange; width: 100%; font-size: 3em;">"SEMCO REMAINS STRONG: YESTERDAY, TODAY AND EVEN TOMORROW"</h1>
+              <br><h3 class="text-center" style="font-weight: 800; margin-top: -20px; color: orange; width: 100%; font-size: 3em;">Join us in our mission to empower our community through cooperative efforts.</h3>
+          </div>
+        </div>
+  </div>
+</div>
+           
+          </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ***** News Section Start ***** -->
+<!-- ... existing code ... -->
 <br>
 <br>
+<!-- ***** News Section Start ***** -->
+
+<!-- ***** News Section End ***** -->
+<br>
+<!-- ... existing code ... -->
 <div class="card-container">
   <div class="card" style="transition: transform 0.3s, box-shadow 0.3s;">
         <img src="assets/images/semco.jpg" alt="Trading Store" class="card-image">
@@ -204,54 +320,11 @@
     </div>
 </div>
 
-  
 
-  <div id="free-quote" class="free-quote">
-    <div class="container">
-      <div class="row">
-          <div class="col-lg-12  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-            <h1 class="text-center" style="font-weight: 800; margin-top: -20px; color: whitesmoke; width: 100%; font-size: 4em;">"SEMCO REMAINS STRONG: YESTERDAY, TODAY AND EVEN TOMORROW"</h1>
-              <br><h3 class="text-center" style="font-weight: 800; margin-top: -20px; color: whitesmoke; width: 100%; font-size: 3em;">Join us in our mission to empower our community through cooperative efforts.</h3>
-          </div>
-        </div>
-  </div>
-</div>
-           
-          </div>
-      </div>
-    </div>
-  </div>
- 
-  <div id="portfolio" class="our-portfolio section"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-            <h6>What's New</h6>
-            <h4>Latest <em> Updates</em></h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-      <div class="row">
-      <div class="col-lg-12">
-  <div id="image-slider" class="image-slider" style="text-align: right;">
-    <div class="slides" style="margin-right: 20px;">
-      <div class="slide active">
-        <img src="assets/images/completion.jpg" alt="Slide 1" style="width: 80%; height: 500px;">
-      </div>
-      <div class="slide">
-        <img src="assets/images/coop.jpg" alt="Slide 2" style="width: 80%; height: 500px;">
-      </div>
-      <div class="slide">
-        <img src="assets/images/SEMCO INTERNET.png" alt="Slide 3" style="width: 80%; height: 500px;">
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-</div>
+<br>
+<br>
+<br>
+<br>
 <footer style="background-color: #4a4a4a; color: white; padding: 20px 0;">
   <div class="container">
     <div class="row">
@@ -289,69 +362,6 @@
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
-
-  <!-- Button to Open the First Modal -->
-  <!-- Add JavaScript for Multiple Modal Functionality -->
-  <script>
-    // Function to open a modal
-    function openModal(modalId) {
-      document.getElementById(modalId).style.display = "block";
-    }
-
-    // Function to close a modal
-    function closeModal(modalId) {
-      document.getElementById(modalId).style.display = "none";
-    }
-
-    // Event listeners for opening modals
-    document.getElementById("openModal1").onclick = function() {
-      openModal("myModal1");
-    }
-    document.getElementById("openModal2").onclick = function() {
-      openModal("myModal2");
-    }
-    document.getElementById("openModal3").onclick = function() {
-      openModal("myModal3");
-    }
-    document.getElementById("openModal4").onclick = function() {
-      openModal("myModal4");
-    }
-    document.getElementById("openModal5").onclick = function() {
-      openModal("myModal5");
-    }
-    document.getElementById("openModal6").onclick = function() {
-      openModal("myModal6");
-    }
-    document.getElementById("openModal7").onclick = function() {
-      openModal("myModal7");
-    }
-    document.getElementById("openModal8").onclick = function() {
-      openModal("myModal8");
-    }
-    document.getElementById("openModal9").onclick = function() {
-      openModal("myModal9");
-    }
-    document.getElementById("openModal10").onclick = function(){
-      openModal("myModal10");
-    }
-
-    // Event listeners for closing modals
-    var closeButtons = document.getElementsByClassName("close");
-    for (var i = 0; i < closeButtons.length; i++) {
-      closeButtons[i].onclick = function() {
-        closeModal(this.getAttribute('data-modal'));
-      }
-    }
-
-    // Close modal when clicking outside of it
-    window.onclick = function(event) {
-      if (event.target.classList.contains('modal')) {
-        closeModal(event.target.id);
-      }
-    }
-  </script>
-
-  <!-- Add this section for the image slider -->
   
 
   <script>
@@ -379,7 +389,14 @@
     setInterval(() => {
         changeSlide(1); // Change to the next slide
     }, 10000); // 10000 milliseconds = 10 seconds
+
+    $(document).ready(function(){
+        $('#newsCarousel').carousel({
+            interval: 5000 // Change slide every 5 seconds
+        });
+    });
   </script>
 
+ 
 </body>
 </html>

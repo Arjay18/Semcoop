@@ -194,6 +194,10 @@
 
 })(window.jQuery);
 
+$('#myCarousel').carousel({
+  interval: 3000,
+})
+
 
 
 

@@ -1,10 +1,4 @@
-/*
 
-TemplateMo 568 DigiMedia
-
-https://templatemo.com/tm-568-digimedia
-
-*/
 
 /* ---------------------------------------------
 Table of contents
@@ -2915,3 +2909,39 @@ ul, ol {
   border-radius: 8px;
  
 }
+
+/*
+---------------------------------------------
+News Section
+----------------------------------------------
+*/
+    .news-section {
+        background-color: #f8f9fa; /* Light background for contrast */
+        padding: 40px 0; /* Padding for top and bottom */
+    }
+    .news-item {
+        background-color: white; /* White background for news items */
+        border: 1px solid #ddd; /* Light border */
+        border-radius: 5px; /* Rounded corners */
+        padding: 20px; /* Padding inside news items */
+        margin-bottom: 20px; /* Space between items */
+        transition: transform 0.3s; /* Smooth hover effect */
+    }
+    .news-item:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    }
+    .read-more {
+        display: inline-block; /* Make the link a block */
+        margin-top: 10px; /* Space above the link */
+        color: #007bff; /* Bootstrap primary color */
+        text-decoration: none; /* Remove underline */
+    }
+    .read-more:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+    .news-image {
+      width: 100%; /* Set to 100% of the parent container */
+      height: 200px; /* Set a fixed height */
+      object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
