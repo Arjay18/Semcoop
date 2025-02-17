@@ -1768,7 +1768,7 @@ Page Title
 --------------------------------------------
 */
 .page-title {
-  background-image: linear-gradient(rgba(50, 49, 49, 0.627), #343859), url(../images/ADS\ SLider.jpg);
+  background-image: url(../images/quote-bg-v2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
