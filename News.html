@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+
+    <title>Semirara Multi Purpose Cooperative</title>
+
+    
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <style>
+      /* Modal Styles */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1000; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+      }
+
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* Add this CSS for the image slider */
+      .image-slider {
+        position: relative;
+        max-width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+      }
+
+      .slide img {
+        width: 100%;
+        height: auto;
+      }
+
+      .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1000;
+      }
+
+      .prev {
+        left: 10px;
+      }
+
+      .next {
+        right: 10px;
+      }
+      .news-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    article {
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    article h2 {
+      margin-top: 0;
+    }
+    
+    article p.meta {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    
+    article img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    .read-more:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+      
+    </style>
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+  <div class="preheader" style="background-color: whitesmoke; color: orange; text-align: right; padding: 10px 15px; position: fixed; width: 100%; top: 0; z-index: 1000; overflow: hidden;">
+    <div class="container"> 
+      <div class="row">
+        <div class="col-lg-12">
+    <div>Welcome to Semirara Multi Purpose Cooperative!</div>
+    </div>
+    </div>
+    </div>
+    </div>
+  <br>
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html">HOME</a></li>
+              <li class="scroll-to-section"><a href="Service.html">SERVICES</a></li>
+              <li class="scroll-to-section"><a href="Membership.html">MEMBERSHIP</a></li>
+              <li class="scroll-to-section"><a href="News.html" class="active">NEWS</a></li>
+              <li class=""><a href="page.html">ABOUT</a></li>
+              <li class="scroll-to-section"><a href="#contact">CONTACT</a></li> 
+              <br>
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+   <br>
+   <br>
+   <br>
+   <br>
+<div id="page-title" class="page-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+          <h2 class="text-left" style="font-weight: 500; color: orange; font-size: 2em; text-align: left;"><em>About Us</em></h2>
+        <div class="col-lg-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+        <h1 class="text-left" style="font-weight: 600; color: whitesmoke; font-size: 2.5em; text-align: left;">Semirara Multi-Purpose Cooperative (SEMCO)</h1>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+         
+        
+  
+<div class="news-container">
+  <h1 class="news-title" style="text-align: center; margin-bottom: 30px; color: orange;">Latest News</h1>
+  <article>
+    <h2 style="color: orange;">Semirara Multi-Purpose Cooperative General Assembly</h2>
+    <p class="meta">Published on January 1, 2023</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tristique eget massa quis semper. Aliquam erat volutpat. Sed tincidunt eros id tincidunt lacinia.</p>
+    <a href="article1.html" class="read-more">Read More &rarr;</a>
+  </article>
+
+  <article>
+    <h2 style="color: orange;">Technology Update: New Gadget Released</h2>
+    <p class="meta">Published on February 12, 2023</p>
+    <p>Suspendisse potenti. Nunc porta, odio ut ullamcorper consectetur, enim velit varius turpis, vitae cursus dui purus non nulla. Curabitur cursus, ex at dictum pharetra, nisl ligula commodo nisi.</p>
+    <a href="article2.html" class="read-more">Read More &rarr;</a>
+  </article>
+
+  <article>
+    <h2 style="color: orange;">Sports: Championship Results and Highlights</h2>
+    <p class="meta">Published on March 15, 2023</p>
+    <p>Fusce ornare, sapien vel congue placerat, ex nisi auctor mi, in pretium sapien lectus ut ligula. Praesent convallis, magna vitae tincidunt posuere, orci lorem iaculis sem, quis tincidunt tortor purus eget justo.</p>
+    <a href="article3.html" class="read-more">Read More &rarr;</a>
+  </article>
+</div>
+
+
+  <footer style="background-color: #4a4a4a; color: white; padding: 20px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h5>Semco Office</h5>
+          <p style="color: white;">Sitio Sibucao Semirara,Caluya, Antique Philippines 5711</p>
+          <p style="color: white;">Cellphone Number: + (63) 9565648752</p>
+        </div>
+        <div class="col-lg-6 text-right margin-right:30px;">
+          <h5 style="margin-bottom: 0;">Keep in touch</h5>
+          <p style="color: white;">Follow Semco for update news</p>
+          <div>
+            <a href="#" style="color: white; margin-right: 30px;">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" style="color: white; margin-right: 30px;">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" style="color: white; margin-right: 30px;">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <hr style="border-color: #8acd0d;">
+      </div>
+      <p class="text-center" style="margin: 0; color: white;">Copyright © 2025 Semirara Multi-Purpose Cooperative. All rights reserved.</p>
+    </div>
+  </footer>
+
+    <!-- The First Modal -->
+   
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <!-- Button to Open the First Modal -->
+  <!-- Add JavaScript for Multiple Modal Functionality -->
+  <script>
+    // Function to open a modal
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = "block";
+    }
+
+    // Function to close a modal
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = "none";
+    }
+
+    // Event listeners for opening modals
+    document.getElementById("openModal1").onclick = function() {
+      openModal("myModal1");
+    }
+    document.getElementById("openModal2").onclick = function() {
+      openModal("myModal2");
+    }
+    document.getElementById("openModal3").onclick = function() {
+      openModal("myModal3");
+    }
+    document.getElementById("openModal4").onclick = function() {
+      openModal("myModal4");
+    }
+    document.getElementById("openModal5").onclick = function() {
+      openModal("myModal5");
+    }
+    document.getElementById("openModal6").onclick = function() {
+      openModal("myModal6");
+    }
+    document.getElementById("openModal7").onclick = function() {
+      openModal("myModal7");
+    }
+    document.getElementById("openModal8").onclick = function() {
+      openModal("myModal8");
+    }
+    document.getElementById("openModal9").onclick = function() {
+      openModal("myModal9");
+    }
+    document.getElementById("openModal10").onclick = function(){
+      openModal("myModal10");
+    }
+
+    // Event listeners for closing modals
+    var closeButtons = document.getElementsByClassName("close");
+    for (var i = 0; i < closeButtons.length; i++) {
+      closeButtons[i].onclick = function() {
+        closeModal(this.getAttribute('data-modal'));
+      }
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        closeModal(event.target.id);
+      }
+    }
+  </script>
+
+  <!-- Add this section for the image slider -->
+  
+
+  <script>
+    // Autoplay functionality for the image slider
+    let slideIndex = 0;
+
+    function showSlides() {
+      const slides = document.querySelectorAll('.slide');
+      slides.forEach((slide, index) => {
+        slide.style.display = (index === slideIndex) ? 'block' : 'none';
+      });
+    }
+
+    function changeSlide() {
+      slideIndex++;
+      const slides = document.querySelectorAll('.slide');
+      if (slideIndex >= slides.length) { slideIndex = 0; }
+      showSlides();
+    }
+
+    // Initialize the slider
+    showSlides();
+  </script>
+
+  
+
+</body>
+</html>
