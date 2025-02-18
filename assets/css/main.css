@@ -3171,14 +3171,8 @@ News Section
   -------------------------------------------
   */
   /* Define custom properties for colors & styling */
-:root {
-  --primary-color: #333;
-  --secondary-color: #666;
-  --accent-color: #e67e22;
-  --border-color: #ccc;
-  --bg-color: #fafafa;
-  --text-color: #555;
-}
+
+
 
 /* Main Article Container */
 article {
@@ -3257,7 +3251,7 @@ article section h2 {
 
 article section p {
   font-size: 1.1em;
-  color: var(--text-color);
+  color:black;
   line-height: 1.8;
   margin-bottom: 25px;
 }
@@ -3319,7 +3313,7 @@ contact article
 }
 
 #contact-article p {
-  color: #555;
+  color: #000000;
   font-size: 1.1rem;
   margin-bottom: 40px;
   text-align: center;
