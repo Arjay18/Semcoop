@@ -2678,9 +2678,7 @@ responsive
   .services ul.nacc li.active {
     padding: 45px;
   }
-  .services .naccs .menu div  {
-    font-size: 0px;
-  }
+  
   .services ul.nacc li .right-image img {
     float: none;
   }
