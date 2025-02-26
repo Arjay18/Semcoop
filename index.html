@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-
-    <meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
   <meta name="description" content="">
   <meta name="author" content="SEMCO">
 
+  <!-- Add favicon for title bar/tab -->
+  <link rel="icon" type="image/x-icon" href="assets/images/semcologo.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/semcologo.png">
+  
   <!-- Google Fonts and other external resources -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -149,6 +152,40 @@
         color: gray; /* Color for the arrow */
         text-decoration: none; /* Remove underline */
       }
+
+
+      .js-preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+
+      .preloader-inner {
+        position: relative;
+        width: 150px;
+        height: 150px;
+      }
+
+      .preloader-logo {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        animation: pulse 1.5s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+      }
+      
     </style>
 
   </head>
@@ -158,12 +195,7 @@
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <img src="assets/images/semcologo.png" alt="SEMCO Logo" class="preloader-logo">
     </div>
   </div>
   <!-- ***** Preloader End ***** -->
@@ -357,8 +389,8 @@
           <div class="down-content">
             <span class="category">Recent News</span>
             <span class="date">17 March 2024</span>
-            <a href="#"><h4>33rd GENERAL ASSEMBLY</h4></a>
-            <h5>" 33 year of building a sustainable Community through Cooperativisim "</h5>
+            <a href="#"><h4>KID’S DAY OUT: OUTREACH PROGRAM 2024</h4></a>
+            <h5>The SEMCO officers and staff celebrated Pride Month on June 23, 2024</h5>
             <span class="author"><img src="assets/images/author-post.jpg" alt="">By: Arjay Domingo</span>
             <div class="border-first-button"><a href="Article1.html">Read More</a></div>
           </div>
@@ -375,8 +407,8 @@
                 <div class="right-content">
                   <span class="category">Recent News</span>
                   <span class="date">10 November 2024</span>
-                  <a href="#"><h4>Semco Tree Planting Activity 2024 </h4></a>
-                  <p>"Go Green, Plant Trees"</p>
+                  <a href="Article2.html"><h4>SMPC PRIDE MONTH Participation</h4></a>
+              
                 </div>
               </div>
             </div>
@@ -389,8 +421,8 @@
                 <div class="right-content">
                   <span class="category">Recent News</span>
                   <span class="date">24 September 2021</span>
-                  <a href="#"><h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4></a>
-                  <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
+                  <a href="Article3.html"><h4>TREE PLANTING ACTIVITY</h4></a>
+                  
                 </div>
               </div>
             </div>
@@ -402,8 +434,8 @@
                 <div class="right-content">
                   <span class="category">Recent News</span>
                   <span class="date">24 September 2021</span>
-                  <a href="#"><h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4></a>
-                  <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
+                  <a href="Article4.html"><h4>SMPC SAFETY DEPARTMENT CONDUCTS FIRE INCIDENT AND EXPLOSION DRILL</h4></a>
+                  
                 </div>
               </div>
             </div>
