@@ -185,7 +185,56 @@
         50% { transform: scale(1.1); }
         100% { transform: scale(1); }
       }
-      
+
+
+      .blog {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.container-fluid {
+  max-width: 1600px; /* Set a max-width for very large screens */
+}
+
+.card {
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  width: 100%; /* Ensure card takes full width */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Responsive adjustments */
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .col-lg-8 {
+    width: 90%; /* Slightly wider on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    padding: 40px 0;
+  }
+  
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .card-body {
+    padding: 1.25rem !important;
+  }
+}
     </style>
 
   </head>
@@ -371,80 +420,109 @@
   </div>
 </div>
 
-<div id="blog" class="blog">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 offset-lg-4  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+<div id="blog" class="blog py-5">
+  <div class="container-fluid px-4"> <!-- Changed to container-fluid for wider content -->
+    <!-- Section Header -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
         <div class="section-heading">
-          <h6>Semco</h6>
-          <h4>Recent <em>News</em></h4>
-          <div class="line-dec"></div>
-        </div>
-      </div>
-      <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-        <div class="blog-post">
-          <div class="thumb">
-            <a href="Article1.html"><img src="assets/images/GA.jpg" alt=""></a>
-          </div>
-          <div class="down-content">
-            <span class="category">Recent News</span>
-            <span class="date">17 March 2024</span>
-            <a href="#"><h4>KID’S DAY OUT: OUTREACH PROGRAM 2024</h4></a>
-            <h5>The SEMCO officers and staff celebrated Pride Month on June 23, 2024</h5>
-            <span class="author"><img src="assets/images/author-post.jpg" alt="">By: Arjay Domingo</span>
-            <div class="border-first-button"><a href="Article1.html">Read More</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-        <div class="blog-posts">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="post-item">
-                <div class="thumb">
-                  <a href="Article2.html"><img src="assets/images/Tree Planting.jpg" alt=""></a>
-                </div>
-                <div class="right-content">
-                  <span class="category">Recent News</span>
-                  <span class="date">10 November 2024</span>
-                  <a href="Article2.html"><h4>SMPC PRIDE MONTH Participation</h4></a>
-              
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="col-lg-12">
-              <div class="post-item">
-                <div class="thumb">
-                  <a href="Article3.html"><img src="assets/images/blog-post-03.jpg" alt=""></a>
-                </div>
-                <div class="right-content">
-                  <span class="category">Recent News</span>
-                  <span class="date">24 September 2021</span>
-                  <a href="Article3.html"><h4>TREE PLANTING ACTIVITY</h4></a>
-                  
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="post-item last-post-item">
-                <div class="thumb">
-                  <a href="Article4.html"><img src="assets/images/blog-post-04.jpg" alt=""></a>
-                </div>
-                <div class="right-content">
-                  <span class="category">Recent News</span>
-                  <span class="date">24 September 2021</span>
-                  <a href="Article4.html"><h4>SMPC SAFETY DEPARTMENT CONDUCTS FIRE INCIDENT AND EXPLOSION DRILL</h4></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
+          <span class="badge bg-primary mb-3 px-3 py-2">Latest Updates</span>
+          <h2 class="display-4 fw-bold mb-4">Recent <span class="text-primary">News</span></h2>
+          <div class="line-dec mx-auto mb-4"></div>
+          <p class="text-muted lead">Stay updated with the latest happenings at SEMCO</p>
         </div>
       </div>
     </div>
+
+    <div class="row g-4 justify-content-center"> <!-- Added justify-content-center -->
+      <!-- Featured Post -->
+      <div class="col-xl-7 col-lg-8 mb-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="position-relative">
+            <a href="Article1.html">
+              <img src="assets/images/GA.jpg" class="card-img-top" alt="Featured News" style="height: 400px; object-fit: cover;">
+              <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-primary px-3 py-2">Featured</span>
+              </div>
+            </a>
+          </div>
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <span class="text-muted me-4"><i class="far fa-calendar me-2"></i>March 17, 2024</span>
+              <span class="text-muted"><i class="far fa-folder me-2"></i>Recent News</span>
+            </div>
+            <h3 class="card-title h3 fw-bold mb-3">
+              <a href="Article1.html" class="text-decoration-none text-dark" style="color: orange;">KID'S DAY OUT: OUTREACH PROGRAM 2024</a>
+            </h3>
+            <p class="card-text text-muted fs-5 mb-4">The SEMCO officers and staff celebrated Pride Month on June 23, 2024</p>
+            <div class="d-flex align-items-center mt-4">
+              <img src="assets/images/author-post.jpg" alt="Author" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
+              <div>
+                <h6 class="mb-0 fw-bold">Arjay Domingo</h6>
+                <small class="text-muted">Content Writer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Posts Column -->
+      <div class="col-xl-5 col-lg-8 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+        <!-- Recent Post 1 -->
+        <div class="card mb-4 border-0 shadow-sm">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <a href="Article2.html">
+                <img src="assets/images/Tree Planting.jpg" class="img-fluid w-100 h-100" alt="News" style="object-fit: cover; min-height: 200px;">
+              </a>
+            </div>
+            <div class="col-md-7">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-2">
+                  <span class="badge bg-secondary me-2">Recent News</span>
+                  <small class="text-muted">Nov 10, 2024</small>
+                </div>
+                <h4 class="card-title h5 fw-bold mb-3">
+                  <a href="Article2.html" class="text-decoration-none text-dark" style="color: orange;">SMPC PRIDE MONTH Participation</a>
+                </h4>
+                <p class="card-text text-muted">Brief description of the SMPC Pride Month event...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        <div class="card mb-4 border-0 shadow-sm">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <a href="Article3.html">
+                <img src="assets/images/Tree Planting.jpg" class="img-fluid w-100 h-100" alt="News" style="object-fit: cover; min-height: 200px;">
+              </a>
+            </div>
+            <div class="col-md-7">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-2">
+                  <span class="badge bg-secondary me-2">Recent News</span>
+                  <small class="text-muted">Nov 10, 2024</small>
+                </div>
+                <h4 class="card-title h5 fw-bold mb-3">
+                  <a href="Article3.html" class="text-decoration-none text-dark" style="color: orange;">TREE PLANTING ACTIVITY</a>
+                </h4>
+                <p class="card-text text-muted">Brief description of the SMPC Pride Month event...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+        <!-- Repeat similar structure for Recent Post 2 and 3 -->
+        <!-- ... -->
+      </div>
+    </div>
   </div>
-</div>  
+</div>
+
+
+
 <div id="free-quote" class="free-quote">
   <div class="container">
     <div class="row">
