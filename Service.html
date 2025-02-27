@@ -801,34 +801,82 @@
           </div>
         </div>
 
-    <footer style="background-color: #4a4a4a; color: white; padding: 20px 0;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h5>Semco Office</h5>
-            <p style="color: white;">Sitio Sibucao Semirara,Caluya, Antique Philippines 5711</p>
-            <p style="color: white;">Cellphone Number: + (63) 9565648752</p>
-          </div>
-          <div class="col-lg-6 text-right margin-right:30px;">
-            <h5 style="margin-bottom: 0;">Keep in touch</h5>
-            <p style="color: white;">Follow Semco for update news</p>
-            <div>
-              <a href="#" style="color: white; margin-right: 30px;">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" style="color: white; margin-right: 30px;">
-                <i class="fab fa-youtube"></i>
-              </a>
-              <a href="#" style="color: white; margin-right: 30px;">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
+        <footer class="footer-section">
+          <div class="container">
+            <div class="footer-content pt-5 pb-5">
+              <div class="row">
+                <!-- Contact Info Column -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="footer-widget">
+                    <div class="footer-logo mb-3">
+                      <img src="assets/images/semcologo.png" alt="SEMCO Logo" style="max-width: 150px;">
+                    </div>
+                    <div class="footer-text">
+                      <p style="color: white;">Empowering our community through cooperative efforts and excellent service.</p>
+                    </div>
+                    <div class="footer-contact mt-4">
+                      <h6 class="text-white">Contact Us</h6>
+                      <p style="color: white;"><i class="fas fa-map-marker-alt me-2"></i>Sitio Sibucao Semirara, Caluya, Antique Philippines 5711</p>
+                      <p style="color: white;"><i class="fas fa-phone-alt me-2"></i>+(63) 9565648752</p>
+                      <p style="color: white;"><i class="fas fa-envelope me-2"></i>info@semco.com.ph</p>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Quick Links Column -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="footer-widget">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled footer-links">
+                      <li><a href="index.html"><i class="fas fa-angle-right me-2"></i>Home</a></li>
+                      <li><a href="Service.html"><i class="fas fa-angle-right me-2"></i>Services</a></li>
+                      <li><a href="Membership.html"><i class="fas fa-angle-right me-2"></i>Membership</a></li>
+                      <li><a href="News.html"><i class="fas fa-angle-right me-2"></i>News</a></li>
+                      <li><a href="page.html"><i class="fas fa-angle-right me-2"></i>About Us</a></li>
+                      <li><a href="Contact.html"><i class="fas fa-angle-right me-2"></i>Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+        
+                <!-- Newsletter Column -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="footer-widget">
+                    <h4 class="text-white mb-4">Connect With Us</h4>
+                    <p class="mb-4" style="color: white;">Follow us on social media for updates and announcements</p>
+                    <div class="social-links mb-4">
+                      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="footer-newsletter">
+                      <h6 class="text-white">Subscribe to our Newsletter</h6>
+                      <form class="mt-3">
+                        <div class="input-group">
+                          <input type="email" class="form-control" placeholder="Enter your email">
+                          <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <hr style="border-color: #8acd0d;">
-        </div>
-        <p class="text-center" style="margin: 0; color: white;">Copyright © 2025 Semirara Multi-Purpose Cooperative. All rights reserved.</p>
-      </div>
-    </footer>
+          
+          <!-- Copyright Bar -->
+          <div class="footer-bottom pt-3 pb-3">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="copyright-text text-center">
+                    <p class="mb-0" style="color: white;">© 2025 Semirara Multi-Purpose Cooperative. All rights reserved.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
 
   <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -841,47 +889,7 @@
   <!-- Button to Open the First Modal -->
   <!-- Add JavaScript for Multiple Modal Functionality -->
   <script>
-    // Function to open a modal
-    function openModal(modalId) {
-      document.getElementById(modalId).style.display = "block";
-    }
-
-    // Function to close a modal
-    function closeModal(modalId) {
-      document.getElementById(modalId).style.display = "none";
-    }
-
-    // Event listeners for opening modals
-    document.getElementById("openModal1").onclick = function() {
-      openModal("myModal1");
-    }
-    document.getElementById("openModal2").onclick = function() {
-      openModal("myModal2");
-    }
-    document.getElementById("openModal3").onclick = function() {
-      openModal("myModal3");
-    }
-    document.getElementById("openModal4").onclick = function() {
-      openModal("myModal4");
-    }
-    document.getElementById("openModal5").onclick = function() {
-      openModal("myModal5");
-    }
-    document.getElementById("openModal6").onclick = function() {
-      openModal("myModal6");
-    }
-    document.getElementById("openModal7").onclick = function() {
-      openModal("myModal7");
-    }
-    document.getElementById("openModal8").onclick = function() {
-      openModal("myModal8");
-    }
-    document.getElementById("openModal9").onclick = function() {
-      openModal("myModal9");
-    }
-    document.getElementById("openModal10").onclick = function(){
-      openModal("myModal10");
-    }
+    
 
     // Event listeners for closing modals
     var closeButtons = document.getElementsByClassName("close");

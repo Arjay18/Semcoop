@@ -2531,27 +2531,91 @@ Footer Style
 --------------------------------------------- 
 */
 
-footer {
-  background-color: #4a4a4acd; /* Dark gray background */
-  color: white; /* White text */
-  padding: 20px 0; /* Padding for spacing */
+.footer-section {
+  background-color: darkslategray;
+  color: #ffffff;
 }
 
-footer h5 {
-  margin-bottom: 10px; /* Space below headings */
+.footer-widget h4 {
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: 600;
 }
 
-footer p {
-  margin: 5px 0; /* Space between paragraphs */
+.footer-widget h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50px;
+  height: 2px;
+  background: #FFD700;
 }
 
-footer a {
-  color: white; /* White links */
-  text-decoration: none; /* Remove underline */
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+  margin-bottom: 10px;
 }
 
-footer a:hover {
-  text-decoration: underline; /* Underline on hover */
+.footer-links a:hover {
+  color: #FFD700;
+  padding-left: 5px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #FFD700;
+  color: #003366;
+  transform: translateY(-3px);
+}
+
+.footer-newsletter .form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #ffffff;
+  padding: 10px 15px;
+}
+
+.footer-newsletter .btn {
+  background: #FFD700;
+  color: #003366;
+  border: none;
+}
+
+.footer-newsletter .btn:hover {
+  background: #ffffff;
+}
+
+.footer-bottom {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.footer-contact p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-contact i {
+  color: #FFD700;
 }
 /* 
 ---------------------------------------------
