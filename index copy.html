@@ -2,846 +2,411 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-  <meta name="description" content="">
-  <meta name="author" content="SEMCO">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="description" content="Latest updates and news from SEMCO">
+    <meta name="author" content="SEMCO">
 
-  <!-- Add favicon for title bar/tab -->
-  <link rel="icon" type="image/x-icon" href="assets/images/semcologo.png">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/semcologo.png">
-  
-  <!-- Google Fonts and other external resources -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  
-  <!-- iOS compatibility meta tags and touch icon -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="format-detection" content="telephone=no">
-  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-  
-  <title>Semirara Multi Purpose Cooperative</title>
-  <!-- ...rest of your head content -->
+    <title>What's New - Semirara Multi Purpose Cooperative</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
-  <!-- Linking Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Same head content as your index.html -->
+    <link rel="icon" type="image/x-icon" href="assets/images/semcologo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/semcologo.png">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
     <style>
-      /* Modal Styles */
-      .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1000; /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
-      }
-
-      .modal-content {
-        background-color: #fefefe;
-        margin: 15% auto; /* 15% from the top and centered */
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-      }
-
-      .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
-
-      .close:hover,
-      .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-      }
-
-      /* Add this CSS for the image slider */
-      .image-slider {
-        position: relative;
-        max-width: 80%;
-        margin: auto;
-        overflow: hidden;
-      }
-
-      /* Add this CSS to set fixed dimensions for news images */
-      
-      /* Update primary color */
-
-      .card-content p {
-        color: #4a4a4a; /* Dark Gray */
-      }
-
-      footer {
-        background-color: #003366; /* Navy Blue */
-        color: white; /* White */
-      }
-
-      hr {
-        border-color: #FFD700; /* Gold */
-      }
-
-      .btn {
-        background-color: #003366; /* Navy Blue */
-        color: white; /* White */
-        border: none; /* Remove border */
-        padding: 10px 20px; /* Add padding */
-        border-radius: 5px; /* Rounded corners */
-        cursor: pointer; /* Pointer cursor */
-      }
-
-      .btn:hover {
-        background-color: #FFD700; /* Gold on hover */
-        color: #003366; /* Navy Blue text on hover */
-      }
-
-      @keyframes marquee {
-        0% { transform: translateX(100%); }
-        100% { transform: translateX(-100%); }
-      }
-
-      .news-highlight {
-        background-color: white; /* Background color */
-        padding: 20px; /* Padding around the section */
-        color: orange; /* Text color */
-      }
-
-      .news-highlight h2 {
-        font-size: 24px; /* Size for the news title */
-        margin-bottom: 10px; /* Space below the title */
-      }
-
-      .news-highlight h3 {
-        font-size: 20px; /* Size for the news description */
-        font-weight: bold; /* Bold text */
-        margin-bottom: 10px; /* Space below the description */
-      }
-
-      .news-content {
-        display: flex; /* Use flexbox for layout */
-        align-items: center; /* Center items vertically */
-      }
-
-      .news-highlight .news-image {
-        max-width: 50%; /* Adjust width as needed */
-        height: auto; /* Maintain aspect ratio */
-        margin-left: 20px; /* Space between text and image */
-      }
-
-      .news-highlight .read-more {
-        font-size: 24px; /* Size for the arrow */
-        color: gray; /* Color for the arrow */
-        text-decoration: none; /* Remove underline */
-      }
-
-
-      .js-preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 9999;
-      }
-
-      .preloader-inner {
-        position: relative;
-        width: 150px;
-        height: 150px;
-      }
-
-      .preloader-logo {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        animation: pulse 1.5s ease-in-out infinite;
-      }
-
-      @keyframes pulse {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.1); }
-        100% { transform: scale(1); }
-      }
-
-
-      .blog {
-  background-color: #f8f9fa;
-  padding: 80px 0;
-}
-
-.container-fluid {
-  max-width: 1600px; /* Set a max-width for very large screens */
-}
-
-.card {
-  transition: all 0.3s ease-in-out;
-  overflow: hidden;
-  width: 100%; /* Ensure card takes full width */
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-}
-
-/* Responsive adjustments */
-@media (min-width: 1200px) {
-  .container-fluid {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-
-@media (max-width: 1199px) {
-  .col-lg-8 {
-    width: 90%; /* Slightly wider on smaller screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .blog {
-    padding: 40px 0;
-  }
-  
-  .container-fluid {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  .card-body {
-    padding: 1.25rem !important;
-  }
-}
-
-
-
-
-.header-area {
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
-  transition: all 0.3s ease;
-}
-
-.navbar {
-  padding: 15px 0;
-}
-
-.logo-img {
-  height: 50px;
-  width: auto;
-  transition: height 0.3s ease;
-}
-
-/* Navigation Links */
-.navbar-nav {
-  margin-left: auto;
-  align-items: center;
-}
-
-.nav-item {
-  margin: 0 10px;
-  position: relative;
-}
-
-.nav-link {
-  color: #003366 !important;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 10px 15px !important;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.nav-link:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background: #FFD700;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover:after,
-.nav-link.active:after {
-  width: 100%;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: #FFD700 !important;
-}
-
-/* Custom Hamburger Menu */
-.navbar-toggler {
-  border: none;
-  padding: 0;
-  width: 30px;
-  height: 20px;
-  position: relative;
-  transition: .5s ease-in-out;
-}
-
-.navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.navbar-toggler .icon-bar {
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background: #003366;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
-
-.navbar-toggler .icon-bar:nth-child(1) {
-  top: 0;
-}
-
-.navbar-toggler .icon-bar:nth-child(2) {
-  top: 8px;
-}
-
-.navbar-toggler .icon-bar:nth-child(3) {
-  top: 16px;
-}
-
-.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
-  top: 8px;
-  transform: rotate(135deg);
-}
-
-.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
-  opacity: 0;
-  left: -60px;
-}
-
-.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
-  top: 8px;
-  transform: rotate(-135deg);
-}
-
-/* Mobile Responsive Styles */
-@media (max-width: 991px) {
-  .header-area {
-    padding: 0 15px;
-  }
-
-  .logo-img {
-    height: 40px;
-  }
-
-  .navbar-collapse {
-    background: white;
-    margin-top: 15px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    max-height: 80vh;
-    overflow-y: auto;
-  }
-
-  .nav-item {
-    margin: 8px 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-link {
-    padding: 12px !important;
-    font-size: 18px;
-  }
-
-  .nav-link:after {
-    display: none;
-  }
-
-  .nav-link:hover,
-  .nav-link.active {
-    background-color: #f8f9fa;
-    border-radius: 5px;
-  }
-}
-
-/* Small Mobile Devices */
-@media (max-width: 576px) {
-  .logo-img {
-    height: 35px;
-  }
-
-  .navbar {
-    padding: 10px 0;
-  }
-
-  .nav-link {
-    font-size: 16px;
-    padding: 10px !important;
-  }
-}
-
-/* Additional Animation for Scroll */
-.header-sticky.sticky-bar {
-  background: rgba(255, 255, 255, 0.95);
-  animation: slideDown 0.5s ease-in-out;
-}
-
-@keyframes slideDown {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-/* Prevent Body Scroll when Mobile Menu is Open */
-body.menu-open {
-  overflow: hidden;
-}
+        .whats-new-header {
+            background-color: #003366;
+            color: white;
+            padding: 60px 0;
+            margin-top: 80px;
+        }
+
+        .news-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-image {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .news-date {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .news-category {
+            background-color: #003366;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .filter-button {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            margin: 5px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .filter-button:hover {
+            background-color: #FFD700;
+            color: #003366;
+        }
+
+        .filter-button.active {
+            background-color: #FFD700;
+            color: #003366;
+        }
     </style>
-
-  </head>
+</head>
 
 <body>
+    <!-- Include your header from index.html -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <!-- ... your existing header content ... -->
+    </header>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <img src="assets/images/semcologo.png" alt="SEMCO Logo" class="preloader-logo">
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
-  <div class="preheader" style="background-color: whitesmoke; color: orange; text-align: right; padding: 5px 10px; font-size: 0.8em; position: fixed; width: 100%; top: 0; z-index: 1000; overflow: hidden;">
-    <div class="container"> 
-      <div class="row">
-        <div class="col-lg-12">
-          <div>Welcome to Semirara Multi Purpose Cooperative!</div>
-        </div>
-      </div>
-    </div>
-  </div>
-<br>
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/images/logo.png" alt="SEMCO Logo" class="logo-img">
-        </a>
-  
-        <!-- Mobile Toggle Button -->
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
-                data-target="#navbarNav" aria-controls="navbarNav" 
-                aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar top-bar"></span>
-          <span class="icon-bar middle-bar"></span>
-          <span class="icon-bar bottom-bar"></span>
-        </button>
-  
-        <!-- Navigation Items -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Service.html">SERVICES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Membership.html">MEMBERSHIP</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="News.html">NEWS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="page.html">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Contact.html">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-    <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+    <!-- What's New Header -->
+    <div class="whats-new-header">
+        <div class="container">
             <div class="row">
-              <div class="col-lg-6 align-self-center">
-                <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <h6>SEMCO</h6>
-                      <h2>Semirara Multi-Purpose Cooperative</h2>
-                      <p>Dates back to the early 80s, when Semirara Coal Corporation (SCC) was in its initial stage of mining operation in the island of Semirara, SEMCO started as Semirara Employees Fund (SEF), basically offering savings and lending services to its members who were regular employees of SCC.</p>
-                    </div>
-                  </div>
+                <div class="col-12 text-center">
+                    <h1 class="wow fadeInUp" data-wow-delay="0.2s">What's New at SEMCO</h1>
+                    <p class="wow fadeInUp" data-wow-delay="0.4s">Stay updated with our latest news, events, and announcements</p>
                 </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                  <img src="assets/images/semcologo.png" alt="">
-                </div>
-              </div>
             </div>
-          </div>
         </div>
+    </div>
+
+   <!-- Filter Section -->
+<div class="container mt-5">
+  <div class="row">
+      <div class="col-12 text-center mb-4">
+          <button class="filter-button active" data-filter="all">All</button>
+          <button class="filter-button" data-filter="events">Events</button>
+          <button class="filter-button" data-filter="announcements">Announcements</button>
+          <button class="filter-button" data-filter="updates">Updates</button>
       </div>
-    </div>
-    
-    </div>
   </div>
-<br>
-<section id="news" class="news-section">
-  <div class="container">
-      <div id="newsCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <div class="row">
-                      <div class="col-lg-4">
-                          <div class="news-item">
-                              <img src="assets/images/semco.jpg" alt="News 1" class="img-fluid news-image">
-                              <h3 style="font-weight: bold; color: orangered;">Trading Store</h3>
-                              <p>"Empowering Communities, Fueling Prosperity – Your Trusted Partner in Quality Goods and Services, Semirara Multi-Purpose Cooperative."</p>
-                              
-                          </div>
-                      </div>
-                      <div class="col-lg-4">
-                          <div class="news-item">
-                              <img src="assets/images/Lending.jpg" alt="News 2" class="img-fluid news-image">
-                              <h3 style="font-weight: bold; color: orangered;">Lending</h3>
-                             
-                              <p>Building Stronger Futures, One Loan at a Time – Empowering Our Members with Trusted Lending Solutions, and Promoting Financial Stability."</p>
-                              
-                          </div>
-                      </div>
-                      <div class="col-lg-4">
-                          <div class="news-item">
-                              <img src="assets/images/CATV-SAT.jpg" alt="News 3" class="img-fluid news-image">
-                              <h3 style="font-weight: bold; color: orangered;">CATV & Internet</h3>
-                              
-                              <p>"Connecting Communities, Enriching Lives – Reliable CATV and High-Speed Internet Services for Seamless Communication and Access."</p>
-                              
-                          </div>
-                      </div>
-                  </div>
+</div>
+
+<!-- News Grid -->
+<div class="container mb-5">
+  <div class="row">
+      <!-- News Item 1 - Events -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp filter-item events">
+          <div class="news-card">
+              <img src="assets/images/GA.jpg" class="card-img-top news-image" alt="Kids Day Out">
+              <div class="card-body">
+                  <span class="news-category">Events</span>
+                  <h5 class="card-title">KID'S DAY OUT: OUTREACH PROGRAM 2024</h5>
+                  <p class="news-date">March 17, 2024</p>
+                  <p class="card-text">Join us for a day filled with fun activities and giving back to our community. Activities include games, storytelling, and gift-giving.</p>
+                  <a href="Article1.html" class="btn btn-primary">Read More</a>
               </div>
           </div>
-          
       </div>
-  </div>
-</section> 
+
+      <!-- News Item 2 - Events -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp filter-item events">
+          <div class="news-card">
+              <img src="assets/images/seminar.jpg" class="card-img-top news-image" alt="Financial Seminar">
+              <div class="card-body">
+                  <span class="news-category">Events</span>
+                  <h5 class="card-title">Financial Literacy Seminar 2024</h5>
+                  <p class="news-date">March 25, 2024</p>
+                  <p class="card-text">Enhance your financial knowledge with our expert-led seminar on personal finance and investment strategies.</p>
+                  <a href="Article2.html" class="btn btn-primary">Read More</a>
+              </div>
           </div>
       </div>
-    </div>
+
+      <!-- News Item 3 - Events -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp filter-item events">
+          <div class="news-card">
+              <img src="assets/images/cooperative.jpg" class="card-img-top news-image" alt="General Assembly">
+              <div class="card-body">
+                  <span class="news-category">Events</span>
+                  <h5 class="card-title">Annual General Assembly 2024</h5>
+                  <p class="news-date">May 15, 2024</p>
+                  <p class="card-text">Don't miss our annual gathering where we'll discuss achievements, plans, and dividends for members.</p>
+                  <a href="Article3.html" class="btn btn-primary">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- News Item 4 - Announcements -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp filter-item announcements">
+          <div class="news-card">
+              <img src="assets/images/Tree Planting.jpg" class="card-img-top news-image" alt="Tree Planting">
+              <div class="card-body">
+                  <span class="news-category">Announcements</span>
+                  <h5 class="card-title">TREE PLANTING ACTIVITY</h5>
+                  <p class="news-date">April 22, 2024</p>
+                  <p class="card-text">Join our environmental initiative! We're planting 1000 trees to celebrate Earth Day 2024.</p>
+                  <a href="Article4.html" class="btn btn-primary">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- News Item 5 - Announcements -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp filter-item announcements">
+          <div class="news-card">
+              <img src="assets/images/scholarship.jpg" class="card-img-top news-image" alt="Scholarship Program">
+              <div class="card-body">
+                  <span class="news-category">Announcements</span>
+                  <h5 class="card-title">Scholarship Program 2024-2025</h5>
+                  <p class="news-date">April 15, 2024</p>
+                  <p class="card-text">Applications now open for our annual scholarship program. Submit your requirements before May 30.</p>
+                  <a href="Article5.html" class="btn btn-primary">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- News Item 6 - Announcements -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp filter-item announcements">
+          <div class="news-card">
+              <img src="assets/images/membership.jpg" class="card-img-top news-image" alt="Membership Drive">
+              <div class="card-body">
+                  <span class="news-category">Announcements</span>
+                  <h5 class="card-title">2024 Membership Drive</h5>
+                  <p class="news-date">April 1, 2024</p>
+                  <p class="card-text">Special membership rates and benefits for new members. Join SEMCO today!</p>
+                  <a href="Article6.html" class="btn btn-primary">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- News Item 7 - Updates -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp filter-item updates">
+          <div class="news-card">
+              <img src="assets/images/pride.jpg" class="card-img-top news-image" alt="Pride Month">
+              <div class="card-body">
+                  <span class="news-category">Updates</span>
+                  <h5 class="card-title">SMPC PRIDE MONTH Participation</h5>
+                  <p class="news-date">March 10, 2024</p>
+                  <p class="card-text">SEMCO celebrates diversity and inclusion during SMPC Pride Month with special activities.</p>
+                  <a href="Article7.html" class="btn btn-primary">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- News Item 8 - Updates -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp filter-item updates">
+          <div class="news-card">
+              <img src="assets/images/digital.jpg" class="card-img-top news-image" alt="Digital Services">
+              <div class="card-body">
+                  <span class="news-category">Updates</span>
+                  <h5 class="card-title">New Digital Services Launch</h5>
+                  <p class="news-date">April 10, 2024</p>
+                  <p class="card-text">Access SEMCO services online through our new digital platform. Available 24/7.</p>
+                  <a href="Article8.html" class="btn btn-primary">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- News Item 9 - Updates -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp filter-item updates">
+          <div class="news-card">
+              <img src="assets/images/office.jpg" class="card-img-top news-image" alt="Office Update">
+              <div class="card-body">
+                  <span class="news-category">Updates</span>
+                  <h5 class="card-title">New Office Hours</h5>
+                  <p class="news-date">March 30, 2024</p>
+                  <p class="card-text">Updated office hours: Monday to Friday 8AM-5PM, Saturday 8AM-12PM.</p>
+                  <a href="Article9.html" class="btn btn-primary">Read More</a>
+              </div>
+          </div>
+      </div>
+
   </div>
-<br>
-<br>
-<br>
-<br>
-<div class="video-info section">
-  <div class="container">
+</div><!-- News Grid -->
+<div class="container mb-5">
     <div class="row">
-      <div class="col-lg-6">
-        <div class="video-thumb">
-          <img src="assets/images/semco.jpg" alt="">
-        </div>
-      </div>
-      <div class="col-lg-6 align-self-center">
-        <div class="section-heading">
-          <h2>About Semirara Multi-Purpose Cooperative</h2>
-          <div class="line-dec"></div>
-          <p>Semirara Multi-Purpose Cooperative: Bridging Connections, Empowering Dreams—Your Trusted Partner in CATV, Internet, Lending, and Everyday Needs.</p>
-        </div>
-        <div class="skills">
-          <div class="skill-slide marketing">
-            <div class="fill"></div>
-            <h6>Regular Members</h6>
-            <span>812</span>
-          </div>
-          <div class="skill-slide digital">
-            <div class="fill"></div>
-            <h6>Assiociate Members</h6>
-            <span>98</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="blog" class="blog py-5">
-  <div class="container-fluid px-4"> <!-- Changed to container-fluid for wider content -->
-    <!-- Section Header -->
-    <div class="row justify-content-center mb-5">
-      <div class="col-lg-8 text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-        <div class="section-heading">
-          <span class="badge bg-primary mb-3 px-3 py-2">Latest Updates</span>
-          <h2 class="display-4 fw-bold mb-4">Recent <span class="text-primary">News</span></h2>
-          <div class="line-dec mx-auto mb-4"></div>
-          <p class="text-muted lead">Stay updated with the latest happenings at SEMCO</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row g-4 justify-content-center"> <!-- Added justify-content-center -->
-      <!-- Featured Post -->
-      <div class="col-xl-7 col-lg-8 mb-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="position-relative">
-            <a href="Article1.html">
-              <img src="assets/images/GA.jpg" class="card-img-top" alt="Featured News" style="height: 400px; object-fit: cover;">
-              <div class="position-absolute top-0 start-0 m-3">
-                <span class="badge bg-primary px-3 py-2">Featured</span>
-              </div>
-            </a>
-          </div>
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center mb-3">
-              <span class="text-muted me-4"><i class="far fa-calendar me-2"></i>March 17, 2024</span>
-              <span class="text-muted"><i class="far fa-folder me-2"></i>Recent News</span>
-            </div>
-            <h3 class="card-title h3 fw-bold mb-3">
-              <a href="Article1.html" class="text-decoration-none text-dark" style="color: orange;">KID'S DAY OUT: OUTREACH PROGRAM 2024</a>
-            </h3>
-            <p class="card-text text-muted fs-5 mb-4">The SEMCO officers and staff celebrated Pride Month on June 23, 2024</p>
-            <div class="d-flex align-items-center mt-4">
-              <img src="assets/images/author-post.jpg" alt="Author" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
-              <div>
-                <h6 class="mb-0 fw-bold">Arjay Domingo</h6>
-                <small class="text-muted">Content Writer</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Recent Posts Column -->
-      <div class="col-xl-5 col-lg-8 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-        <!-- Recent Post 1 -->
-        <div class="card mb-4 border-0 shadow-sm">
-          <div class="row g-0">
-            <div class="col-md-5">
-              <a href="Article2.html">
-                <img src="assets/images/Tree Planting.jpg" class="img-fluid w-100 h-100" alt="News" style="object-fit: cover; min-height: 200px;">
-              </a>
-            </div>
-            <div class="col-md-7">
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-2">
-                  <span class="badge bg-secondary me-2">Recent News</span>
-                  <small class="text-muted">Nov 10, 2024</small>
+        <!-- News Item 1 - Events -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp filter-item events">
+            <div class="news-card">
+                <img src="assets/images/GA.jpg" class="card-img-top news-image" alt="Kids Day Out">
+                <div class="card-body">
+                    <span class="news-category">Events</span>
+                    <h5 class="card-title">KID'S DAY OUT: OUTREACH PROGRAM 2024</h5>
+                    <p class="news-date">March 17, 2024</p>
+                    <p class="card-text">Join us for a day filled with fun activities and giving back to our community. Activities include games, storytelling, and gift-giving.</p>
+                    <a href="Article1.html" class="btn btn-primary">Read More</a>
                 </div>
-                <h4 class="card-title h5 fw-bold mb-3">
-                  <a href="Article2.html" class="text-decoration-none text-dark" style="color: orange;">SMPC PRIDE MONTH Participation</a>
-                </h4>
-                <p class="card-text text-muted">Brief description of the SMPC Pride Month event...</p>
-              </div>
             </div>
-          </div>
         </div>
-         
-        <div class="card mb-4 border-0 shadow-sm">
-          <div class="row g-0">
-            <div class="col-md-5">
-              <a href="Article3.html">
-                <img src="assets/images/Tree Planting.jpg" class="img-fluid w-100 h-100" alt="News" style="object-fit: cover; min-height: 200px;">
-              </a>
-            </div>
-            <div class="col-md-7">
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-2">
-                  <span class="badge bg-secondary me-2">Recent News</span>
-                  <small class="text-muted">Nov 10, 2024</small>
+
+        <!-- News Item 2 - Events -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp filter-item events">
+            <div class="news-card">
+                <img src="assets/images/seminar.jpg" class="card-img-top news-image" alt="Financial Seminar">
+                <div class="card-body">
+                    <span class="news-category">Events</span>
+                    <h5 class="card-title">Financial Literacy Seminar 2024</h5>
+                    <p class="news-date">March 25, 2024</p>
+                    <p class="card-text">Enhance your financial knowledge with our expert-led seminar on personal finance and investment strategies.</p>
+                    <a href="Article2.html" class="btn btn-primary">Read More</a>
                 </div>
-                <h4 class="card-title h5 fw-bold mb-3">
-                  <a href="Article3.html" class="text-decoration-none text-dark" style="color: orange;">TREE PLANTING ACTIVITY</a>
-                </h4>
-                <p class="card-text text-muted">Brief description of the SMPC Pride Month event...</p>
-              </div>
             </div>
-          </div>
         </div>
-      
 
-        <!-- Repeat similar structure for Recent Post 2 and 3 -->
-        <!-- ... -->
-      </div>
+        <!-- News Item 3 - Events -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp filter-item events">
+            <div class="news-card">
+                <img src="assets/images/cooperative.jpg" class="card-img-top news-image" alt="General Assembly">
+                <div class="card-body">
+                    <span class="news-category">Events</span>
+                    <h5 class="card-title">Annual General Assembly 2024</h5>
+                    <p class="news-date">May 15, 2024</p>
+                    <p class="card-text">Don't miss our annual gathering where we'll discuss achievements, plans, and dividends for members.</p>
+                    <a href="Article3.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Item 4 - Announcements -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp filter-item announcements">
+            <div class="news-card">
+                <img src="assets/images/Tree Planting.jpg" class="card-img-top news-image" alt="Tree Planting">
+                <div class="card-body">
+                    <span class="news-category">Announcements</span>
+                    <h5 class="card-title">TREE PLANTING ACTIVITY</h5>
+                    <p class="news-date">April 22, 2024</p>
+                    <p class="card-text">Join our environmental initiative! We're planting 1000 trees to celebrate Earth Day 2024.</p>
+                    <a href="Article4.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Item 5 - Announcements -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp filter-item announcements">
+            <div class="news-card">
+                <img src="assets/images/scholarship.jpg" class="card-img-top news-image" alt="Scholarship Program">
+                <div class="card-body">
+                    <span class="news-category">Announcements</span>
+                    <h5 class="card-title">Scholarship Program 2024-2025</h5>
+                    <p class="news-date">April 15, 2024</p>
+                    <p class="card-text">Applications now open for our annual scholarship program. Submit your requirements before May 30.</p>
+                    <a href="Article5.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Item 6 - Announcements -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp filter-item announcements">
+            <div class="news-card">
+                <img src="assets/images/membership.jpg" class="card-img-top news-image" alt="Membership Drive">
+                <div class="card-body">
+                    <span class="news-category">Announcements</span>
+                    <h5 class="card-title">2024 Membership Drive</h5>
+                    <p class="news-date">April 1, 2024</p>
+                    <p class="card-text">Special membership rates and benefits for new members. Join SEMCO today!</p>
+                    <a href="Article6.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Item 7 - Updates -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp filter-item updates">
+            <div class="news-card">
+                <img src="assets/images/pride.jpg" class="card-img-top news-image" alt="Pride Month">
+                <div class="card-body">
+                    <span class="news-category">Updates</span>
+                    <h5 class="card-title">SMPC PRIDE MONTH Participation</h5>
+                    <p class="news-date">March 10, 2024</p>
+                    <p class="card-text">SEMCO celebrates diversity and inclusion during SMPC Pride Month with special activities.</p>
+                    <a href="Article7.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Item 8 - Updates -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp filter-item updates">
+            <div class="news-card">
+                <img src="assets/images/digital.jpg" class="card-img-top news-image" alt="Digital Services">
+                <div class="card-body">
+                    <span class="news-category">Updates</span>
+                    <h5 class="card-title">New Digital Services Launch</h5>
+                    <p class="news-date">April 10, 2024</p>
+                    <p class="card-text">Access SEMCO services online through our new digital platform. Available 24/7.</p>
+                    <a href="Article8.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Item 9 - Updates -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp filter-item updates">
+            <div class="news-card">
+                <img src="assets/images/office.jpg" class="card-img-top news-image" alt="Office Update">
+                <div class="card-body">
+                    <span class="news-category">Updates</span>
+                    <h5 class="card-title">New Office Hours</h5>
+                    <p class="news-date">March 30, 2024</p>
+                    <p class="card-text">Updated office hours: Monday to Friday 8AM-5PM, Saturday 8AM-12PM.</p>
+                    <a href="Article9.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </div>
 </div>
 
 
 
-<div id="free-quote" class="free-quote">
-  <div class="container">
-    <div class="row">
-        <div class="col-lg-12  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-          <h1 class="text-center" style="font-weight: 800; margin-top: -20px; color: orange; width: 100%; font-size: 3em;">"SEMCO REMAINS STRONG: YESTERDAY, TODAY AND EVEN TOMORROW"</h1>
-            <br><h3 class="text-center" style="font-weight: 800; margin-top: -20px; color: orange; width: 100%; font-size: 3em;">Join us in our mission to empower our community through cooperative efforts.</h3>
-        </div>
-      </div>
-</div>
-</div>
+    <!-- Include your footer from index.html -->
+    <footer class="footer-section">
+        <!-- ... your existing footer content ... -->
+    </footer>
 
-<footer style="background-color: #4a4a4a; color: white; padding: 20px 0;">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <h5>Semco Office</h5>
-        <p style="color: white;">Sitio Sibucao Semirara,Caluya, Antique Philippines 5711</p>
-        <p style="color: white;">Cellphone Number: + (63) 9565648752</p>
-      </div>
-      <div class="col-lg-6 text-right margin-right:30px;">
-        <h5 style="margin-bottom: 0;">Keep in touch</h5>
-        <p style="color: white;">Follow Semco for update news</p>
-        <div>
-          <a href="#" style="color: white; margin-right: 30px;">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" style="color: white; margin-right: 30px;">
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a href="#" style="color: white; margin-right: 30px;">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-      </div>
-      <hr style="border-color: #8acd0d;">
-    </div>
-    <p class="text-center" style="margin: 0; color: white;">Copyright © 2025 Semirara Multi-Purpose Cooperative. All rights reserved.</p>
-  </div>
-</footer>
-   
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/custom.js"></script>
 
-  <!-- Scripts -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  
-
-  <script>
-    let slideIndex = 0;
-
-    function showSlides() {
-        const slides = document.querySelectorAll('.item');
-        slides.forEach((slide, index) => {
-            slide.style.display = (index === slideIndex) ? 'block' : 'none';
-        });
-    }
-
-    function changeSlide(n) {
-        const slides = document.querySelectorAll('.item');
-        slideIndex += n;
-        if (slideIndex >= slides.length) { slideIndex = 0; }
-        if (slideIndex < 0) { slideIndex = slides.length - 1; }
-        showSlides();
-    }
-
-    // Initialize the slider
-    showSlides();
-
-    // Automatic slide change every 10 seconds
-    setInterval(() => {
-        changeSlide(1); // Change to the next slide
-    }, 10000); // 10000 milliseconds = 10 seconds
-
-    $(document).ready(function(){
-        $('#newsCarousel').carousel({
-            interval: 5000 // Change slide every 5 seconds
-        });
-    });
-
-    // Add this JavaScript to handle mobile menu
-document.addEventListener('DOMContentLoaded', function() {
-  const navbarToggler = document.querySelector('.navbar-toggler');
-  const body = document.body;
-
-  navbarToggler.addEventListener('click', function() {
-    body.classList.toggle('menu-open');
-  });
-
-  // Close mobile menu when clicking outside
-  document.addEventListener('click', function(event) {
-    const navbar = document.querySelector('.navbar-collapse');
-    const isClickInside = navbar.contains(event.target) || navbarToggler.contains(event.target);
-
-    if (!isClickInside && navbar.classList.contains('show')) {
-      navbarToggler.click();
-    }
-  });
-
-  // Close mobile menu when clicking a nav link
-  const navLinks = document.querySelectorAll('.nav-link');
-  navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      if (window.innerWidth < 992) {
-        navbarToggler.click();
-      }
+    <!-- Updated JavaScript for filtering -->
+<script>
+  $(document).ready(function(){
+    $('.filter-button').click(function(){
+        var value = $(this).attr('data-filter');
+        
+        // Remove active class from all buttons and add to clicked button
+        $('.filter-button').removeClass('active');
+        $(this).addClass('active');
+        
+        if(value == "all") {
+            $('.filter-item').show('1000');
+        } else {
+            $('.filter-item').not('.' + value).hide('1000');
+            $('.filter-item').filter('.' + value).show('1000');
+        }
     });
   });
-
-  // Handle scroll behavior
-  let lastScroll = 0;
-  window.addEventListener('scroll', function() {
-    const currentScroll = window.pageYOffset;
-    const header = document.querySelector('.header-area');
-
-    if (currentScroll > lastScroll && currentScroll > 100) {
-      // Scrolling down
-      header.style.transform = 'translateY(-100%)';
-    } else {
-      // Scrolling up
-      header.style.transform = 'translateY(0)';
-    }
-    lastScroll = currentScroll;
-  });
-});
   </script>
-
- 
 </body>
 </html>

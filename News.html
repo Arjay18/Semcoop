@@ -37,126 +37,66 @@
     <link rel="stylesheet" href="assets/css/owl.css">
 
     <style>
-      /* Modal Styles */
-      .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1000; /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
-      }
+  .whats-new-header {
+            background-color:white;
+            color: darkblue;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
 
-      .modal-content {
-        background-color: #fefefe;
-        margin: 15% auto; /* 15% from the top and centered */
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-      }
+        .news-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
 
-      .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
 
-      .close:hover,
-      .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-      }
+        .news-image {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
 
-      /* Add this CSS for the image slider */
-      .image-slider {
-        position: relative;
-        max-width: 80%;
-        margin: auto;
-        overflow: hidden;
-      }
+        .news-date {
+            color: #666;
+            font-size: 0.9em;
+        }
 
-      .slides {
-        display: flex;
-        transition: transform 0.5s ease;
-      }
+        .news-category {
+            background-color: #003366;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
 
-      .slide {
-        min-width: 100%;
-        box-sizing: border-box;
-      }
+        .filter-button {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            margin: 5px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
 
-      .slide img {
-        width: 100%;
-        height: auto;
-      }
+        .filter-button:hover {
+            background-color: #FFD700;
+            color: #003366;
+        }
 
-      .prev, .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(255, 255, 255, 0.8);
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-        z-index: 1000;
-      }
-
-      .prev {
-        left: 10px;
-      }
-
-      .next {
-        right: 10px;
-      }
-      .news-container {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    
-    article {
-      background: #fff;
-      margin-bottom: 20px;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    }
-    
-    article h2 {
-      margin-top: 0;
-    }
-    
-    article p.meta {
-      font-size: 0.9em;
-      color: #666;
-      margin-bottom: 10px;
-    }
-    
-    article img {
-      max-width: 100%;
-      border-radius: 5px;
-      margin-bottom: 15px;
-    }
-    
-    .read-more {
-      display: inline-block;
-      margin-top: 10px;
-      color: #007BFF;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    
-    .read-more:hover {
-      color: #0056b3;
-      text-decoration: underline;
-    }
+        .filter-button.active {
+            background-color: #FFD700;
+            color: #003366;
+        }
       
     </style>
 
@@ -239,39 +179,249 @@
 <br>
 <br>
 <br>
-         
-        
-  
-<div class="news-container">
-  <h1 class="news-title" style="text-align: center; margin-bottom: 30px; color: orangered;">Latest News</h1>
-  <article>
-    <h2 style="color: orange;">KID’S DAY OUT: OUTREACH PROGRAM 2024</h2>
-    <p class="meta">Published on February 26, 2025</p>
-    <p>SEMCO hosted a Christmas Outreach Program called 'Kids Day Out' last November 30, 2024</p>
-    <a href="Article1.html" class="read-more">Read More &rarr;</a>
-  </article>
 
-  <article>
-    <h2 style="color: orange;">SMPC PRIDE MONTH Participation</h2>
-    <p class="meta">Published on February 26, 2025</p>
-    <p>The SEMCO officers and staff celebrated Pride Month on June 23, 2024, organized by SMPC,</p>
-    <a href="Article2.html" class="read-more">Read More &rarr;</a>
-  </article>
-
-  <article>
-    <h2 style="color: orange;">TREE PLANTING ACTIVITY</h2>
-    <p class="meta">Published on February 26, 2025</p>
-    <p>On November 10, 2024, the Semirara Multi-purpose Cooperative (SEMCO) organized a significant tree-planting event,</p>
-    <a href="Article3.html" class="read-more">Read More &rarr;</a>
-  </article>
-
-  <article>
-    <h2 style="color: orange;">SMPC SAFETY DEPARTMENT CONDUCTS FIRE INCIDENT AND EXPLOSION DRILL</h2>
-    <p class="meta">Published on February 26, 2025</p>
-    <p>On October 16, 2024, the SMPC Safety Department successfully conducted a Fire Incident and Explosion Drill</p>
-    <a href="Article4.html" class="read-more">Read More &rarr;</a>
-  </article>
+<!-- What's New Header -->
+<div class="whats-new-header">
+  <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+              <h1 class="wow fadeInUp" data-wow-delay="0.2s">What's New at SEMCO</h1>
+              <p class="wow fadeInUp" data-wow-delay="0.4s">Stay updated with our latest news, events, and announcements</p>
+          </div>
+      </div>
+  </div>
 </div>
+
+<!-- Filter Section -->
+<div class="container mt-5">
+<div class="row">
+<div class="col-12 text-center mb-4">
+    <button class="filter-button active" data-filter="all">All</button>
+    <button class="filter-button" data-filter="events">Events</button>
+    <button class="filter-button" data-filter="announcements">Announcements</button>
+    <button class="filter-button" data-filter="updates">Updates</button>
+</div>
+</div>
+</div>
+
+<!-- News Grid -->
+<div class="container mb-5">
+<div class="row">
+<!-- News Item 1 - Events -->
+<div class="col-lg-4 col-md-6 wow fadeInUp filter-item events">
+    <div class="news-card">
+        <img src="assets/images/GA.jpg" class="card-img-top news-image" alt="Kids Day Out">
+        <div class="card-body">
+            <span class="news-category">Events</span>
+            <h5 class="card-title">KID'S DAY OUT: OUTREACH PROGRAM 2024</h5>
+            <p class="news-date">March 17, 2024</p>
+            <p class="card-text">Join us for a day filled with fun activities and giving back to our community. Activities include games, storytelling, and gift-giving.</p>
+            <a href="Article1.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+</div>
+
+<!-- News Item 2 - Events -->
+<div class="col-lg-4 col-md-6 wow fadeInUp filter-item events">
+    <div class="news-card">
+        <img src="assets/images/GA.jpg" class="card-img-top news-image" alt="Financial Seminar">
+        <div class="card-body">
+            <span class="news-category">Events</span>
+            <h5 class="card-title">SMPC PRIDE MONTH Participation</h5>
+            <p class="news-date">March 25, 2024</p>
+            <p class="card-text">The SEMCO officers and staff celebrated Pride Month on June 23, 2024, organized by SMPC,</p>
+            <a href="Article2.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+</div>
+
+<!-- News Item 3 - Events -->
+<div class="col-lg-4 col-md-6 wow fadeInUp filter-item events">
+    <div class="news-card">
+        <img src="assets/images/GA.jpg" class="card-img-top news-image" alt="General Assembly">
+        <div class="card-body">
+            <span class="news-category">Events</span>
+            <h5 class="card-title">TREE PLANTING ACTIVITY</h5>
+            <p class="news-date">May 15, 2024</p>
+            <p class="card-text">On November 10, 2024, the Semirara Multi-purpose Cooperative (SEMCO) organized a significant tree-planting event,</p>
+            <a href="Article3.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+</div>
+
+<!-- News Item 4 - Announcements -->
+<div class="col-lg-4 col-md-6 wow fadeInUp filter-item announcements">
+    <div class="news-card">
+        <img src="assets/images/Tree Planting.jpg" class="card-img-top news-image" alt="Tree Planting">
+        <div class="card-body">
+            <span class="news-category">Announcements</span>
+            <h5 class="card-title">TREE PLANTING ACTIVITY</h5>
+            <p class="news-date">April 22, 2024</p>
+            <p class="card-text">Join our environmental initiative! We're planting 1000 trees to celebrate Earth Day 2024.</p>
+            <a href="Article4.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+</div>
+
+<!-- News Item 5 - Announcements 
+<div class="col-lg-4 col-md-6 wow fadeInUp filter-item announcements">
+    <div class="news-card">
+        <img src="assets/images/scholarship.jpg" class="card-img-top news-image" alt="Scholarship Program">
+        <div class="card-body">
+            <span class="news-category">Announcements</span>
+            <h5 class="card-title">Scholarship Program 2024-2025</h5>
+            <p class="news-date">April 15, 2024</p>
+            <p class="card-text">Applications now open for our annual scholarship program. Submit your requirements before May 30.</p>
+            <a href="Article5.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 wow fadeInUp filter-item announcements">
+    <div class="news-card">
+        <img src="assets/images/membership.jpg" class="card-img-top news-image" alt="Membership Drive">
+        <div class="card-body">
+            <span class="news-category">Announcements</span>
+            <h5 class="card-title">2024 Membership Drive</h5>
+            <p class="news-date">April 1, 2024</p>
+            <p class="card-text">Special membership rates and benefits for new members. Join SEMCO today!</p>
+            <a href="Article6.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 wow fadeInUp filter-item updates">
+    <div class="news-card">
+        <img src="assets/images/pride.jpg" class="card-img-top news-image" alt="Pride Month">
+        <div class="card-body">
+            <span class="news-category">Updates</span>
+            <h5 class="card-title">SMPC PRIDE MONTH Participation</h5>
+            <p class="news-date">March 10, 2024</p>
+            <p class="card-text">SEMCO celebrates diversity and inclusion during SMPC Pride Month with special activities.</p>
+            <a href="Article7.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 wow fadeInUp filter-item updates">
+    <div class="news-card">
+        <img src="assets/images/digital.jpg" class="card-img-top news-image" alt="Digital Services">
+        <div class="card-body">
+            <span class="news-category">Updates</span>
+            <h5 class="card-title">New Digital Services Launch</h5>
+            <p class="news-date">April 10, 2024</p>
+            <p class="card-text">Access SEMCO services online through our new digital platform. Available 24/7.</p>
+            <a href="Article8.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 wow fadeInUp filter-item updates">
+    <div class="news-card">
+        <img src="assets/images/office.jpg" class="card-img-top news-image" alt="Office Update">
+        <div class="card-body">
+            <span class="news-category">Updates</span>
+            <h5 class="card-title">New Office Hours</h5>
+            <p class="news-date">March 30, 2024</p>
+            <p class="card-text">Updated office hours: Monday to Friday 8AM-5PM, Saturday 8AM-12PM.</p>
+            <a href="Article9.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+<div class="container mb-5">
+<div class="row">
+  
+
+
+  <div class="col-lg-4 col-md-6 wow fadeInUp filter-item announcements">
+      <div class="news-card">
+          <img src="assets/images/Tree Planting.jpg" class="card-img-top news-image" alt="Tree Planting">
+          <div class="card-body">
+              <span class="news-category">Announcements</span>
+              <h5 class="card-title">TREE PLANTING ACTIVITY</h5>
+              <p class="news-date">April 22, 2024</p>
+              <p class="card-text">Join our environmental initiative! We're planting 1000 trees to celebrate Earth Day 2024.</p>
+              <a href="Article4.html" class="btn btn-primary">Read More</a>
+          </div>
+      </div>
+  </div>
+
+  
+  <div class="col-lg-4 col-md-6 wow fadeInUp filter-item announcements">
+      <div class="news-card">
+          <img src="assets/images/scholarship.jpg" class="card-img-top news-image" alt="Scholarship Program">
+          <div class="card-body">
+              <span class="news-category">Announcements</span>
+              <h5 class="card-title">Scholarship Program 2024-2025</h5>
+              <p class="news-date">April 15, 2024</p>
+              <p class="card-text">Applications now open for our annual scholarship program. Submit your requirements before May 30.</p>
+              <a href="Article5.html" class="btn btn-primary">Read More</a>
+          </div>
+      </div>
+  </div>
+
+  
+  <div class="col-lg-4 col-md-6 wow fadeInUp filter-item announcements">
+      <div class="news-card">
+          <img src="assets/images/membership.jpg" class="card-img-top news-image" alt="Membership Drive">
+          <div class="card-body">
+              <span class="news-category">Announcements</span>
+              <h5 class="card-title">2024 Membership Drive</h5>
+              <p class="news-date">April 1, 2024</p>
+              <p class="card-text">Special membership rates and benefits for new members. Join SEMCO today!</p>
+              <a href="Article6.html" class="btn btn-primary">Read More</a>
+          </div>
+      </div>
+  </div>
+
+  
+  <div class="col-lg-4 col-md-6 wow fadeInUp filter-item updates">
+      <div class="news-card">
+          <img src="assets/images/pride.jpg" class="card-img-top news-image" alt="Pride Month">
+          <div class="card-body">
+              <span class="news-category">Updates</span>
+              <h5 class="card-title">SMPC PRIDE MONTH Participation</h5>
+              <p class="news-date">March 10, 2024</p>
+              <p class="card-text">SEMCO celebrates diversity and inclusion during SMPC Pride Month with special activities.</p>
+              <a href="Article7.html" class="btn btn-primary">Read More</a>
+          </div>
+      </div>
+  </div>
+
+  
+  <div class="col-lg-4 col-md-6 wow fadeInUp filter-item updates">
+      <div class="news-card">
+          <img src="assets/images/digital.jpg" class="card-img-top news-image" alt="Digital Services">
+          <div class="card-body">
+              <span class="news-category">Updates</span>
+              <h5 class="card-title">New Digital Services Launch</h5>
+              <p class="news-date">April 10, 2024</p>
+              <p class="card-text">Access SEMCO services online through our new digital platform. Available 24/7.</p>
+              <a href="Article8.html" class="btn btn-primary">Read More</a>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="col-lg-4 col-md-6 wow fadeInUp filter-item updates">
+      <div class="news-card">
+          <img src="assets/images/office.jpg" class="card-img-top news-image" alt="Office Update">
+          <div class="card-body">
+              <span class="news-category">Updates</span>
+              <h5 class="card-title">New Office Hours</h5>
+              <p class="news-date">March 30, 2024</p>
+              <p class="card-text">Updated office hours: Monday to Friday 8AM-5PM, Saturday 8AM-12PM.</p>
+              <a href="Article9.html" class="btn btn-primary">Read More</a>
+          </div>
+      </div>
+  </div>
+-->
+</div>
+</div>
+
 
 <footer class="footer-section">
   <div class="container">
@@ -364,49 +514,23 @@
   <!-- Button to Open the First Modal -->
   <!-- Add JavaScript for Multiple Modal Functionality -->
   <script>
-    
-
-    // Event listeners for closing modals
-    var closeButtons = document.getElementsByClassName("close");
-    for (var i = 0; i < closeButtons.length; i++) {
-      closeButtons[i].onclick = function() {
-        closeModal(this.getAttribute('data-modal'));
-      }
-    }
-
-    // Close modal when clicking outside of it
-    window.onclick = function(event) {
-      if (event.target.classList.contains('modal')) {
-        closeModal(event.target.id);
-      }
-    }
-  </script>
-
-  <!-- Add this section for the image slider -->
-  
-
-  <script>
-    // Autoplay functionality for the image slider
-    let slideIndex = 0;
-
-    function showSlides() {
-      const slides = document.querySelectorAll('.slide');
-      slides.forEach((slide, index) => {
-        slide.style.display = (index === slideIndex) ? 'block' : 'none';
+    $(document).ready(function(){
+      $('.filter-button').click(function(){
+          var value = $(this).attr('data-filter');
+          
+          // Remove active class from all buttons and add to clicked button
+          $('.filter-button').removeClass('active');
+          $(this).addClass('active');
+          
+          if(value == "all") {
+              $('.filter-item').show('1000');
+          } else {
+              $('.filter-item').not('.' + value).hide('1000');
+              $('.filter-item').filter('.' + value).show('1000');
+          }
       });
-    }
-
-    function changeSlide() {
-      slideIndex++;
-      const slides = document.querySelectorAll('.slide');
-      if (slideIndex >= slides.length) { slideIndex = 0; }
-      showSlides();
-    }
-
-    // Initialize the slider
-    showSlides();
-  </script>
-
+    });
+    </script>
   
 
 </body>
